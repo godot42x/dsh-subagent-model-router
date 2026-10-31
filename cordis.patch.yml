@@ -1,0 +1,6 @@
+# dsh-subagent-model-router profile layer: mounts the Agent Teams model-routing tools.
+# Apply after the Agent Teams layer; the plugin installs into Team member scopes only.
+
+- insert:
+    - id: subagent-model-router
+      name: dsh-subagent-model-router

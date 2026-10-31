@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="268" viewBox="0 0 360 268" font-family="-apple-system, 'SF Pro Text', system-ui, sans-serif">
+  <rect x="1" y="1" width="358" height="266" rx="12" fill="#1b1b1b" stroke="#333"/>
+  <text x="16" y="30" fill="#ededed" font-size="13" font-weight="600">本子智能体模型</text>
+  <rect x="236" y="16" width="108" height="20" rx="10" fill="none" stroke="#4a3f2a"/>
+  <text x="290" y="30" fill="#e5b567" font-size="10" text-anchor="middle">继承父会话路由</text>
+
+  <line x1="16" y1="46" x2="344" y2="46" stroke="#2b2b2b"/>
+
+  <text x="16" y="72" fill="#6f6f6f" font-size="11">当前路由</text>
+  <circle cx="23" cy="92" r="3.5" fill="#6cc46c"/>
+  <text x="34" y="97" fill="#ededed" font-size="14" font-weight="600">deepseek-v4.1-flash</text>
+  <text x="200" y="97" fill="#9a9a9a" font-size="12">(high)</text>
+
+  <text x="16" y="120" fill="#6f6f6f" font-size="11">待生效</text>
+  <text x="16" y="138" fill="#e5b567" font-size="12">yfy/gpt-6.1-sol · 下一轮起</text>
+
+  <line x1="16" y1="154" x2="344" y2="154" stroke="#2b2b2b"/>
+
+  <text x="16" y="176" fill="#9a9a9a" font-size="11">切到</text>
+  <rect x="16" y="186" width="246" height="30" rx="7" fill="#212121" stroke="#3a3a3a"/>
+  <text x="28" y="205" fill="#9a9a9a" font-size="12">选择路由…</text>
+  <path d="M242 197 l5 5 l5 -5" fill="none" stroke="#8a8a8a" stroke-width="1.4"/>
+  <rect x="270" y="186" width="74" height="30" rx="7" fill="#2b3a5e" stroke="#41598c"/>
+  <text x="307" y="205" fill="#ededed" font-size="12" text-anchor="middle">切换</text>
+
+  <text x="16" y="238" fill="#6f6f6f" font-size="10.5">只显示与本子智能体有关的操作。</text>
+  <text x="16" y="254" fill="#6f6f6f" font-size="10.5">可选路由 = 父会话为本会话允许的列表（2 条）。</text>
+</svg>

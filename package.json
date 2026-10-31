@@ -1,0 +1,75 @@
+{
+  "name": "dsh-subagent-model-router",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Subagent model routing for DeepSeek Harness: spawn a child on a chosen provider/model, re-route a live child repeatedly, and enforce a per-Session allowlist of child models from the composer dock. Works with or without Agent Teams.",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/generic.smoke.mjs && node test/client.smoke.mjs",
+    "test:smoke": "node test/smoke.mjs && node test/generic.smoke.mjs && node test/client.smoke.mjs",
+    "test:host": "node test/smoke.mjs && node test/generic.smoke.mjs",
+    "test:client": "node test/client.smoke.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-app-boot": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "dsh": {
+    "compat": {
+      "validated": "0.2.1-rc.5",
+      "range": ">=0.2.1-rc.5 <0.3.0",
+      "note": "Seams were read from this build; a different dsh line may rename them. The plugin warns and degrades instead of crashing, but treat it as untested."
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    },
+    "catalog": {
+      "category": "tool",
+      "summary": {
+        "en": "Subagent model routing: spawn a child on a chosen provider/model, switch a live child's model repeatedly, and enforce a per-Session allowlist of child models. Independent of Agent Teams.",
+        "zh": "子智能体模型路由：创建时指定 provider/model、运行中可反复切换模型，并按会话强门禁限制可用的子智能体模型；不依赖 Agent Teams。"
+      },
+      "capabilities": [
+        "tools",
+        "ui"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godot42x/dsh-subagent-model-router.git"
+  },
+  "homepage": "https://github.com/godot42x/dsh-subagent-model-router",
+  "bugs": {
+    "url": "https://github.com/godot42x/dsh-subagent-model-router/issues"
+  }
+}

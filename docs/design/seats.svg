@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="244" viewBox="0 0 560 244" font-family="-apple-system, 'SF Pro Text', system-ui, sans-serif">
+  <rect x="0" y="0" width="560" height="244" rx="10" fill="#141414" stroke="#2a2a2a"/>
+
+  <text x="16" y="24" fill="#6f6f6f" font-size="10.5">HEADER（当前会话的实际路由）</text>
+  <rect x="16" y="32" width="176" height="22" rx="11" fill="none" stroke="#3a3a3a"/>
+  <text x="28" y="47" fill="#9a9a9a" font-size="12">模型</text>
+  <text x="58" y="47" fill="#ededed" font-size="12">deepseek-v4.1-flash</text>
+  <rect x="204" y="32" width="124" height="22" rx="11" fill="none" stroke="#4a3f2a"/>
+  <text x="216" y="47" fill="#e5b567" font-size="12">继承 · 待生效 →</text>
+
+  <text x="16" y="86" fill="#6f6f6f" font-size="10.5">DOCK（主会话内）</text>
+  <rect x="16" y="94" width="152" height="24" rx="12" fill="none" stroke="#3a3a3a"/>
+  <text x="28" y="110" fill="#ededed" font-size="12">子智能体 · 3</text>
+  <circle cx="150" cy="106" r="3" fill="#6cc46c"/>
+  <text x="158" y="110" fill="#9a9a9a" font-size="10.5">1</text>
+
+  <text x="16" y="148" fill="#6f6f6f" font-size="10.5">DOCK（子会话内，只留自己那一件事）</text>
+  <rect x="16" y="156" width="168" height="24" rx="12" fill="none" stroke="#3a3a3a"/>
+  <text x="28" y="172" fill="#ededed" font-size="12">本子智能体模型</text>
+
+  <text x="16" y="210" fill="#6f6f6f" font-size="10.5">SIDEBAR HOVER（每个会话一行）</text>
+  <rect x="16" y="218" width="300" height="22" rx="6" fill="#1b1b1b" stroke="#2f2f2f"/>
+  <text x="28" y="233" fill="#9a9a9a" font-size="10.5">模型</text>
+  <text x="58" y="233" fill="#ededed" font-size="12">deepseek-v4.1-flash</text>
+  <text x="196" y="233" fill="#9a9a9a" font-size="10.5">(high)</text>
+
+  <text x="336" y="233" fill="#6f6f6f" font-size="10.5">侧栏浮层里读，不用打开子会话</text>
+</svg>
